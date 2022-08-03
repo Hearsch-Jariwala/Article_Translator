@@ -1,0 +1,10 @@
+pylint
+pytest
+black
+transformers
+torch
+sentencepiece
+beautifulsoup4
+requests
+click
+sacremoses

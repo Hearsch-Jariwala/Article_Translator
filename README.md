@@ -1,5 +1,6 @@
-# Article Translator
+[![Python application test with Github Actions](https://github.com/Hearsch-Jariwala/Article_Translator/actions/workflows/main.yml/badge.svg)](https://github.com/Hearsch-Jariwala/Article_Translator/actions/workflows/main.yml)
 
+# Article Translator
 
 CLI tool that uses a pre-trained model to generate summary for an article in english then translate to spanish. 
 We will use the open source Hugging Face library to load and use a transformer model.

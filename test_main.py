@@ -11,13 +11,3 @@ def test_get_article_text():
         "including humans."
     )
     assert len(article_txt) > 25
-
-
-def test_translation():
-    runner = CliRunner()
-    result = runner.invoke(
-        get_and_translate,
-        ["https://en.wikipedia.org/wiki/Artificial_intelligence"],
-    )
-    assert result.output.__contains__("(such as Siri and Alexa)")
-    assert len(result.output) > 20

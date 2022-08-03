@@ -38,11 +38,11 @@ def get_article_text(article_url):
     soup = BeautifulSoup(page.content, "html.parser")
 
     # Extract body text
-    bodytext = soup.find_all("p")
-    bodytext = [i.text for i in bodytext]
-    article_text = " ".join(bodytext)
+    body_text = soup.find_all("p")
+    body_text = [i.text for i in body_text]
+    article_text = " ".join(body_text)
     return article_text
 
 
 if __name__ == "__main__":
-    get_and_translate()
+    get_and_translate()  # pylint: disable=no-value-for-parameter
